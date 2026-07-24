@@ -6,7 +6,7 @@ A free Claude skill that audits your digital storefront the way retail leaders a
 
 Physical retail has a practice called walking the store. A leader comes in through the front door like a customer, follows the signage, picks up products, stands in line, and writes down everything that made buying harder. I ran the digital version of this play for years — site merchandising and storefront management at Amazon, mobile game distribution across every North American storefront before that. The mechanics translate directly.
 
-The problem it solves: product owners are too close to their own product. You know where everything is. You wrote the copy and you can't unread it. The fastest way out of your own head is to become someone else — a specific, qualified customer with a reason to be shopping today — and walk every path they'd walk.
+The problem it solves: product owners are often too close to their own product. You know where everything is. You wrote the copy and you can't unread it. The fastest way out of your own head is to become someone else — a specific, qualified customer with a reason to be shopping today — and walk every path they'd walk.
 
 That's what the skill does. It builds the persona first (an SMB owner in January shopping for tax software and a parent buying back-to-school clothes in August walk very different paths), then shops each channel where buyers actually meet you: Google results, your homepage, your pricing page, the Amazon search grid, the App Store listing. It shops in two modes — lean back (skimming on the couch, three seconds per screen) and lean forward (comparison shopping, doing the price math, reading your worst review). Then it writes up what it found.
 
