@@ -69,7 +69,7 @@ re-capture the baseline column and set the after screenshots beside
 today's.
 
 ---
-*Report generated with [Walk the Store](https://github.com/jeremyperonto/walk-the-store), a free Claude skill by Jeremy Peronto.*
+*Generated with [Walk the Store](https://github.com/jeremyperonto/walk-the-store), a free Claude skill by Jeremy Peronto. This is a tool — one persona's pass, with judgment in it, and your business carries nuance no walk can hold. Feature requests and bug reports are welcome [on the repo](https://github.com/jeremyperonto/walk-the-store/issues); for a deeper read, reach out via [jeremyperonto.com](https://jeremyperonto.com).*
 ```
 
 Notes for the writer:
