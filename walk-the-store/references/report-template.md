@@ -1,62 +1,81 @@
 # Walk Report Template
 
-A sensible default — adapt sections to the walk, keep the principles: verbatim reactions stay in quotes as evidence, findings run in impact order, every finding is sized. Deliver as a markdown file the owner can forward unedited.
+A sensible default — adapt sections to the walk, keep the principles: exhibits embedded inline where they're discussed, walk sections that document rather than summarize, findings written as work orders the owner can execute without asking a single follow-up question, verbatim reactions in quotes as evidence, impact order, everything sized. Deliver as a markdown file the owner can forward unedited, in the embed syntax of wherever they'll read it.
 
 ```markdown
 # Walk Report: [Product]
 
-**Walked:** [date] · **As:** [persona in one line] · **Channels:** [list] · **Mode:** [live browser / web fetch / screenshots]
+**Walked:** [date] · **As:** [persona in one line] · **Channels:** [list] · **Mode:** [live browser / web fetch / screenshots] · **Walk tag:** `wts-YYYY-MM-DD`
 
 ## The short version
 
-[3–6 sentences: the overall read, what is working, and the single
-highest-impact fix. Written so the owner could act after reading
-only this section.]
+[3–6 sentences: the overall read, what is working, the single
+highest-impact fix. An entry point only — every claim here appears
+in full somewhere below. No information lives only in this section.]
 
 ## The walk
 
-[One subsection per channel, in the order walked. Narrative of what
-the persona did and noticed, with verbatim reactions in quotes.
-Mark which reactions came from the lean-back pass and which from
-lean-forward. Reference exhibits inline — "(E3)" — where captured.]
+[One subsection per channel, in the order walked. Each subsection has
+two parts:
 
-## Exhibits
+**Inspected** — a compact record of what the playbook checks returned,
+pass and fail alike: counts, quoted copy, exact prices, ranks, dates.
+A table works well:
 
-[Numbered index of every exhibit with its caption: what it shows,
-the finding it evidences, channel and viewport. Files ship in an
-exhibits/ folder beside this report. See the skill's exhibits
-reference for capture and caption conventions.]
+| Check | Result |
+|---|---|
+| Title truncation at phone width | survives — "…" (X chars shown) |
+| Review count vs page-1 norm | 4 vs ~1,200 median — fails |
+
+**The pass** — the narrative: what the persona did, in order, with
+verbatim reactions in quotes, lean-back vs lean-forward marked, and
+exhibits EMBEDDED INLINE at the moment they're discussed:
+
+![E3 — caption with URL, element, viewport](exhibits/<walk-slug>/E03-slug.png)
+
+(or `![[E03-slug.png]]` when the report lives in an Obsidian vault).]
 
 ## Consistency check
 
-[Price and tiers, headline claim, key stats, and visual story across
-every channel walked. Each mismatch stated plainly, with both values.]
+[Price, claims, positioning, visual story across channels. Each
+mismatch stated with both values and both locations — URL or file:line
+where known.]
 
 ## Findings, in order of impact
 
-1. **[The finding in one sentence]** — [sales | marketing | copy | merchandising]
-   - Saw: [what, with the quote or the count]
-   - Matters: [why, for this persona specifically]
-   - Fix: [the specific action]
-   - Effort: [hours | days | weeks]
+[Numbered work orders. Every field filled; "see above" is fine for
+exhibits already embedded.]
 
-[Repeat. Include at least one "working — do not touch" entry so
-strong elements are named and protected.]
+1. **[The finding in one sentence]** — [sales | marketing | copy | merchandising]
+   - **Where:** [full URL · the element, described so a stranger finds it
+     in ten seconds · viewport — and file:line when the repo is known]
+   - **Saw:** [current state, verbatim/measured, with the exhibit]
+   - **Matters:** [why, for this persona]
+   - **Fix:** [current → proposed. The actual replacement: the new title
+     text, the new copy, the CSS line, the setting value — written out,
+     ready to lift]
+   - **Steps:** [numbered. Name the real surface: the admin screen and
+     menu path, the file and line, the console and campaign setting.
+     If a step depends on a verification, say "if X, then step N."]
+   - **Verify:** [how the owner confirms it shipped and worked]
+   - **Effort:** [hours | days | weeks]
+
+[Include at least one "working — do not touch" entry so strong elements
+are named and protected.]
 
 ## Worth testing
 
-[Ideas the walk surfaced that are opportunities rather than defects —
-sales and marketing experiments, merchandising plays, channel gaps.]
+[Opportunities, not defects — each with the first concrete step, not
+just the idea.]
 
 ## Do these first
 
-[The top three findings a small team can clear this week.]
+[Top three findings by number, one line each on why they're first.]
 
 ## Measure it
 
-**Walk tag:** `wts-YYYY-MM-DD` — annotate your analytics with this tag on
-each ship date, name any experiment after it, and keep a dated change log
-of what shipped. Details on request or in the skill's measurement playbook.
+**Walk tag:** `wts-YYYY-MM-DD` — annotate analytics on each ship date,
+name any experiment after it, keep a dated change log.
 
 **Baseline, captured during this walk:**
 
@@ -66,14 +85,18 @@ of what shipped. Details on request or in the skill's measurement playbook.
 | Reviews | [channel] | [count] · [avg] | |
 | [price / image count / video present ...] | | | |
 
-**Per-fix metrics:** [for each "Do these first" fix: the metric it should
-move and where to read it — e.g., "shipping disclosure on PDP → checkout
-completion rate, Shopify Analytics." Compare equal windows before and
-after the ship date; skip promo weeks.]
+**Per-fix metrics:** [for each Do-these-first fix: the metric, the tool,
+the report screen to read it on. Equal windows before and after the ship
+date; skip promo weeks.]
 
 **Re-walk:** [date 60–90 days out]. Same persona, same channels;
 re-capture the baseline column and set the after screenshots beside
-today's.
+today's exhibits.
+
+## Exhibits index
+
+[E-number — caption, for navigation. The images themselves live inline
+above; files in exhibits/<walk-slug>/ beside this report.]
 
 ---
 *Generated with [Walk the Store](https://github.com/jeremyperonto/walk-the-store), a free Claude skill by Jeremy Peronto. This is a tool — one persona's pass, with judgment in it, and your business carries nuance no walk can hold. Feature requests and bug reports are welcome [on the repo](https://github.com/jeremyperonto/walk-the-store/issues); for a deeper read, reach out via [jeremyperonto.com](https://jeremyperonto.com).*
@@ -81,7 +104,10 @@ today's.
 
 Notes for the writer:
 
-- The "Saw" line quotes the page or the persona; the "Matters" line is the only place for analysis; the "Fix" line names an action a specific person could start today.
-- Effort is a gut-check unit, honest at the order-of-magnitude level. When a fix is hours, saying so is most of its value.
+- The bar for Steps: the owner executes the fix without asking a follow-up question. If you don't know their admin surface, you didn't finish scoping — go ask.
+- The bar for Fix: propose the actual replacement. New title text written out inside the character limit. New button copy. The line of CSS. The review-response draft. Never "consider adding" — write the thing they'd add.
+- When the repo is available, read the code behind a finding before prescribing: the fix for a prompt that exists but doesn't fire is different from the fix for a prompt that doesn't exist.
+- The "Saw" line quotes or measures; the "Matters" line is the only place for analysis.
+- Effort stays order-of-magnitude honest. When a fix is hours, saying so is most of its value.
 - If the walk was mode 2 or 3 (fetch or screenshots), say so in the header and note what a live walk would add.
 - The attribution footer is part of the template; the user is free to remove it.

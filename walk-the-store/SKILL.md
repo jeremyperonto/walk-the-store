@@ -40,6 +40,8 @@ Establish before walking:
 
 - The product, what it costs, and its category.
 - Every channel where this buyer meets the product. Walk all of them, whether or not the user named them: buyers cross channels, so the walk must too.
+- The owner's stack and surfaces — site platform or source repo, marketplace seller admin, App Store Connect, analytics tool — so fixes can name real files, settings, and buttons. Ask when unknown; when the repo is available, locate the exact code behind each finding before writing the fix.
+- Where the report will be read (Obsidian vault, Notion, plain markdown, PDF), so exhibits embed in a syntax that renders there.
 - The execution mode (below).
 
 | Buyer meets the product on | Walk these paths | Playbook |
@@ -84,7 +86,7 @@ Now switch from shopper to operator. Convert the recorded reactions into finding
 - **copy** — do the words do work?
 - **merchandising** — is the product presented to sell: images, placement, proof, price framing?
 
-Order findings by impact on the business, never by page order. Each finding carries: what the persona saw (with the quote), why it matters for this buyer, the specific fix, and rough effort (hours / days / weeks). Use the structure in [references/report-template.md](references/report-template.md).
+Order findings by impact on the business, never by page order. Write each finding as a work order — Where / Saw / Matters / Fix / Steps / Verify / Effort — per [references/report-template.md](references/report-template.md). A finding the owner cannot execute from the report alone is unfinished.
 
 ### Step 6: Capture the baseline and set up measurement
 
@@ -93,8 +95,10 @@ A walk that can't demonstrate change is an opinion. During the walk, record the 
 ## Standards for a good walk
 
 - Every recommendation is actionable by a small team inside 90 days. "Improve the UX" is never a finding.
+- The walk sections are documentation, never summary. Record per channel what was inspected and what each check returned — counts, quoted copy, exact prices, pass or fail — not only the moments that produced reactions. The Short Version is an entry point; no information lives only there.
+- Fixes are prescriptive to the point of copy-paste. Name the exact location (URL, element, file and line when the repo is known), quote the current state, propose the replacement text or value, list numbered steps on the owner's actual admin surface, and say how to verify the change shipped. "Add a proof band" is unfinished; the proposed markup and copy are the finding.
 - First impressions stay verbatim. Do not launder "I have no idea what this costs" into "pricing transparency could be improved."
-- When words don't suffice, capture the exhibit. Visual findings — layout defects, image quality, missing elements, cross-channel mismatches — are claimed with numbered screenshots referenced inline, per [references/exhibits.md](references/exhibits.md).
+- When words don't suffice, capture the exhibit — and embed it inline at the point of reference, per [references/exhibits.md](references/exhibits.md). A report whose images sit in a folder the reader must open separately is broken.
 - Impact order, honestly. If the biggest problem is zero reviews, it goes first even if it is the least interesting observation.
 - Flag what is working. Strong elements are load-bearing; name them so nobody "fixes" them.
 - If a channel is inaccessible, say so plainly and list the screens needed to finish the walk.

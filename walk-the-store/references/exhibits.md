@@ -45,7 +45,8 @@ For missing-element findings — no buy button above the fold, no price on the p
 
 - Number in capture order: E1, E2, E3…
 - Files: `E01-short-slug.png` in an `exhibits/` folder beside the report.
-- Caption format: what the exhibit shows, the reaction or finding it evidences, channel and viewport. Example: "E3 — cognicard.app homepage at phone width; the fold cuts above any price or install link (lean-back pass)."
-- Reference inline from the report text: "…the price is nowhere above the fold (E3)."
-- The report carries an Exhibits section listing every exhibit with its caption.
+- **Embed, never just cite.** Each exhibit appears inline in the report at the point where it is first discussed — the image itself, not a code. Use standard markdown (`![E03 — caption](exhibits/<walk-slug>/E03-slug.png)`, path relative to the report file) or, when the report lives in an Obsidian vault, the vault's embed syntax (`![[E03-slug.png]]`). Confirm the destination format during scoping; a report whose images the reader must open from a folder is broken.
+- Caption format carries location: what the exhibit shows, the finding it evidences, and where the camera stood — full URL, the element, viewport width. Example: "E8 — cognicard.app/pricing, the Plus card's CTA at 390px: purple bar, no label pixels."
+- Later mentions may use the short code ("(E8)") once the image has appeared.
+- The report ends with an Exhibits index listing every exhibit and caption, for navigation.
 - No doctored images. Annotate in the caption, never in the pixels. If pointing would truly help, name the region ("bottom-right quadrant").
