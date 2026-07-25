@@ -18,7 +18,14 @@ only this section.]
 [One subsection per channel, in the order walked. Narrative of what
 the persona did and noticed, with verbatim reactions in quotes.
 Mark which reactions came from the lean-back pass and which from
-lean-forward. Reference screenshots where captured.]
+lean-forward. Reference exhibits inline — "(E3)" — where captured.]
+
+## Exhibits
+
+[Numbered index of every exhibit with its caption: what it shows,
+the finding it evidences, channel and viewport. Files ship in an
+exhibits/ folder beside this report. See the skill's exhibits
+reference for capture and caption conventions.]
 
 ## Consistency check
 

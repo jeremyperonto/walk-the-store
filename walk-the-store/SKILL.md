@@ -50,7 +50,7 @@ Establish before walking:
 
 **Execution modes, in order of preference:**
 
-1. **Live browser** (browser automation available). The real walk. Navigate exactly as the persona would — enter through search, never by typing the destination URL. Screenshot each moment that produces a reaction; the screenshots become report evidence. Run the mobile pass at a phone-width viewport (~390px) — most first visits happen on a phone. Never complete a purchase (stop at the payment page), never log into accounts, and avoid elements that trigger browser dialogs.
+1. **Live browser** (browser automation available). The real walk. Navigate exactly as the persona would — enter through search, never by typing the destination URL. Capture exhibits at every moment that produces a reaction, per [references/exhibits.md](references/exhibits.md): numbered, captioned screenshots that ship with the report as evidence — element crops for visual defects, grid-context captures for thumbnails, viewport grabs for fold and gap findings, and analysis of the product images themselves. Run the mobile pass at a phone-width viewport (~390px) — most first visits happen on a phone. Never complete a purchase (stop at the payment page), never log into accounts, and avoid elements that trigger browser dialogs.
 2. **Web fetch.** Pull the pages and work from their content. Flag in the report that layout, image, and speed observations are limited in this mode.
 3. **Screenshots from the user.** Ask for the specific screens listed in the relevant channel playbook, including the search results screens. Do this rather than guessing at what a page contains.
 
@@ -94,6 +94,7 @@ A walk that can't demonstrate change is an opinion. During the walk, record the 
 
 - Every recommendation is actionable by a small team inside 90 days. "Improve the UX" is never a finding.
 - First impressions stay verbatim. Do not launder "I have no idea what this costs" into "pricing transparency could be improved."
+- When words don't suffice, capture the exhibit. Visual findings — layout defects, image quality, missing elements, cross-channel mismatches — are claimed with numbered screenshots referenced inline, per [references/exhibits.md](references/exhibits.md).
 - Impact order, honestly. If the biggest problem is zero reviews, it goes first even if it is the least interesting observation.
 - Flag what is working. Strong elements are load-bearing; name them so nobody "fixes" them.
 - If a channel is inaccessible, say so plainly and list the screens needed to finish the walk.
