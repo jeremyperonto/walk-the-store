@@ -104,7 +104,8 @@ above; files in exhibits/<walk-slug>/ beside this report.]
 
 Notes for the writer:
 
-- The bar for Steps: the owner executes the fix without asking a follow-up question. If you don't know their admin surface, you didn't finish scoping — go ask.
+- Write it lean. Short declarative sentences. Numbers over adjectives. Cut any clause the sentence works without, and any sentence that restates the one before it. The report should read like a sharp operator wrote it in a hurry, and it should be shorter than your first draft.
+- The bar for Steps: the owner executes the fix without asking a follow-up question. If you don't know their admin surface, you didn't finish scoping — go ask. And verify platform capabilities before prescribing them (which ad tier allows keyword control, which console has the setting) — a step that names the wrong surface costs more trust than no step.
 - The bar for Fix: propose the actual replacement. New title text written out inside the character limit. New button copy. The line of CSS. The review-response draft. Never "consider adding" — write the thing they'd add.
 - When the repo is available, read the code behind a finding before prescribing: the fix for a prompt that exists but doesn't fire is different from the fix for a prompt that doesn't exist.
 - The "Saw" line quotes or measures; the "Matters" line is the only place for analysis.
