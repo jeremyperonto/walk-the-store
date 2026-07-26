@@ -30,6 +30,10 @@ Sources verified: 2026-07-26. If a finding hinges on a hard limit below and this
 - Listing tier (if the owner has Seller Center access) as the internal metric for the Measure-it section.
 - Shop page coherence: does the catalog look like one brand or a liquidation bin? The persona clicks through more here than anywhere.
 
+## Mode-2 fetchability (observed 2026-07-26)
+
+PDPs and profiles return "Security Check" or login shells. The sanctioned mode-2 search path: `shop.tiktok.com/us/k/<query>` — server-rendered SEO keyword pages with full ranked product cards (price, sold count, rating, badges, PDP links). Caveat in every report: the SEO grid is not the in-app feed; feed rank and video presence stay unverifiable without a browser.
+
 ## Sources (official)
 
 - [Product Listing: What You Need to Know](https://seller-us.tiktok.com/university/essay?knowledge_id=7073362639816491&lang=en) — TikTok Shop Academy (US), public. Verified 2026-07-26.

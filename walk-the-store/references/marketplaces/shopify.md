@@ -30,6 +30,10 @@ Scope note: a Shopify store is the merchant's own site — the walk method lives
 - Shop Pay presence at checkout (conversion driver and Shop-surface trust signal).
 - Theme-inflicted defects: image crops, buried specs, variant pickers that hide inventory — platform flexibility means the walk checks the theme's rendering, never assumes it.
 
+## Mode-2 fetchability (observed 2026-07-26)
+
+Merchant storefronts are generally fetchable (theme-dependent; product `.json` endpoints often work but may rate-limit — a 429 means slow down, never guess). The Shop app surface was untested in fetch mode as of this date; treat it as unverified and say so if walked this way.
+
 ## Sources (official)
 
 - [Product media](https://help.shopify.com/en/manual/products/product-media) — Shopify Help Center. Canonical via index, 2026-07-26.

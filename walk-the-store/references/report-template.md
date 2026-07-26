@@ -93,10 +93,14 @@ date; skip promo weeks.]
 re-capture the baseline column and set the after screenshots beside
 today's exhibits.
 
-## Exhibits index
+## Exhibits index (live-browser walks only)
 
 [E-number — caption, for navigation. The images themselves live inline
-above; files in exhibits/<walk-slug>/ beside this report.]
+above; files in exhibits/<walk-slug>/ beside this report. In fetch or
+screenshot modes, replace this section with the mode-limitations note:
+evidence is quoted copy and indexed data, each line carrying its source
+and date — the inline-embed requirement applies only when exhibits
+exist.]
 
 ---
 *Generated with [Walk the Store](https://github.com/jeremyperonto/walk-the-store), a free Claude skill by Jeremy Peronto. This is a tool — one persona's pass, with judgment in it, and your business carries nuance no walk can hold. Feature requests and bug reports are welcome [on the repo](https://github.com/jeremyperonto/walk-the-store/issues); for a deeper read, reach out via [jeremyperonto.com](https://jeremyperonto.com).*

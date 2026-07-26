@@ -10,7 +10,7 @@ Run `python3 eval/select_products.py <YYYYMMDD>` with the eval date as the seed.
 
 Five walks, one per rolled pair, executed by fresh agent instances that know nothing beyond the skill files (the Claude-B pattern from Anthropic's authoring guidance). Web-fetch mode is the default for eval volume — it's what claude.ai users without a browser get, and marketplace bot-walls are themselves findings. At least one walk per release series must be live-browser (the spot check).
 
-Each walk produces: a compact report in the template format, plus an **eval telemetry** section — which skill files were read, every tool failure (URL + error), and every point where the skill's instructions were ambiguous or impossible in the mode used.
+Agent read lists must include references/measurement.md (Step 6 depends on it) alongside SKILL.md, personas.md, marketplace.md, the assigned marketplace file, and report-template.md. Browser-UA fetches (curl) count as mode-2 fetch tools. Each walk produces: a compact report in the template format, plus an **eval telemetry** section — which skill files were read, every tool failure (URL + error), and every point where the skill's instructions were ambiguous or impossible in the mode used.
 
 ## 3. Scoring rubric (1–5 each)
 

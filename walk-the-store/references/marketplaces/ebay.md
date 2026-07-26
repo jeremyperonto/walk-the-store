@@ -29,6 +29,10 @@ Sources verified: 2026-07-26. If a finding hinges on a hard limit below and this
 - Condition description vs. photos — any gap is a returns machine and a finding.
 - Landed cost vs. the visible competition; seller feedback score in the persona's field of view.
 
+## Mode-2 fetchability (observed 2026-07-26)
+
+Standard fetch tools fail on all ebay.com URLs (timeouts or bot-block "Error Page"); /sch/ search and /itm/ item pages stay blocked under every method tried. Browser-UA fetches succeed on /b/ browse nodes and /p/ catalog pages, which carry full embedded JSON state — ranked tiles, prices, sponsored flags, ratings, competing offers. Sanctioned substitution: the browse node for the persona's phrase stands in for the search page, sponsored tiles skipped, substitution labeled. Seller descriptions live in iframes and stay unreadable.
+
 ## Sources (official)
 
 - [Listing best practices](https://www.ebay.com/sellercenter/listings/create-listings/best-practices) — eBay Seller Center, public. Verified 2026-07-26.

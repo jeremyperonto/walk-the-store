@@ -32,6 +32,10 @@ Sources verified: 2026-07-26. If a finding hinges on a hard limit below and this
 - Delivery promise date vs. page-1 competitors.
 - A+ present and working (comparison module keeping shoppers in-family) or absent/decorative.
 
+## Mode-2 fetchability (observed 2026-07-26)
+
+SERP, Best Sellers nodes, review pages, and brand stores return 503 to fetch tools. Product pages may return 200 with a body-stripped shell — treat as a block; the title survives in the meta tag (label it as such). Workable proxies, labeled: Google's index of amazon.com listings for selection order; third-party trackers for price/review/sales snapshots (cite tracker + snapshot date).
+
 ## Sources (official)
 
 - [Product image requirements](https://sellercentral.amazon.com/help/hub/reference/external/G1641) — Seller Central help, public. Verified 2026-07-26.

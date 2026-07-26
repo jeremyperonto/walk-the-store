@@ -30,6 +30,10 @@ Sources verified: 2026-07-26. If a finding hinges on a hard limit below and this
 - Listing Quality score (if the owner has Seller Center access) as the internal metric for the Measure-it section.
 - Pro Seller badge presence; delivery tag vs. neighbors.
 
+## Mode-2 fetchability (observed 2026-07-26)
+
+All surfaces — search, browse, product, reviews, business.walmart.com mirror — return a "Robot or human?" CAPTCHA to fetch tools. Mode-2 walks run entirely on search-index snippets; say so per item. Selection order proxy: external search restricted to walmart.com, labeled.
+
 ## Sources (official)
 
 - [Product detail page: image guidelines & requirements](https://marketplacelearn.walmart.com/guides/Item%20setup/Item%20content,%20imagery,%20and%20media/Product-detail-page:-Image-guidelines-&-requirements) — Marketplace Learn, public. Verified 2026-07-26.

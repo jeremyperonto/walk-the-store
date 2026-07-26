@@ -30,6 +30,10 @@ Sources verified: 2026-07-26 (Etsy's help center bot-shields automated checks; U
 - Shipping price + delivery estimate in the grid — the free-shipping sort/rank effect makes this a pricing finding, not just a logistics one.
 - Shop-level trust: review count/recency, About section, policies filled.
 
+## Mode-2 fetchability (observed 2026-07-26)
+
+Sitewide 403 to fetch tools — search, market pages, and listings. Mode-2 walks run on search-index snippets of Etsy's own page copy; attribute every fact to the snippet. Selection proxy: the market page's "bestselling" module order as carried in the search index, labeled as Etsy-authored ordering rather than the search grid.
+
 ## Sources (official)
 
 - [How to Create a Listing](https://help.etsy.com/hc/en-us/articles/115015628707-How-to-Create-a-Listing) — Etsy Help. Verified via canonical index 2026-07-26.
