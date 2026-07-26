@@ -4,7 +4,7 @@ Feature releases get a version bump and a GitHub Release with the built zip. The
 
 ## 1.3.0 — 2026-07-26
 
-- Per-marketplace playbooks: Amazon, Walmart, eBay, Etsy, and TikTok Shop each get a dedicated rules file — official listing requirements with sourced, dated links to marketplace documentation, ranking mechanics, expert practice, and marketplace-specific walk checks. Loaded one at a time so walks stay context-light.
+- Per-marketplace playbooks: Amazon, Walmart, eBay, Etsy, TikTok Shop, and Shopify (platform rules + the Shop app surface) each get a dedicated rules file — official listing requirements with sourced, dated links to marketplace documentation, ranking mechanics, expert practice, and marketplace-specific walk checks. Loaded one at a time so walks stay context-light.
 - Freshness rule: every playbook carries a Sources-verified date; hard limits older than ~90 days (or contradicted by the live page) get re-fetched from the official source before they're cited, and drift is flagged in the report.
 - Scope bar stated: marketplaces qualify when third-party vendors own their own merchandising and can win through content updates.
 

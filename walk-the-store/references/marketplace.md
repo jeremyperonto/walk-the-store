@@ -50,6 +50,7 @@ The method above is universal; hard limits and ranking mechanics are not. Each s
 - [marketplaces/ebay.md](marketplaces/ebay.md)
 - [marketplaces/etsy.md](marketplaces/etsy.md)
 - [marketplaces/tiktok-shop.md](marketplaces/tiktok-shop.md)
+- [marketplaces/shopify.md](marketplaces/shopify.md) — the platform's rules plus the Shop app surface; the store walk itself lives in dtc-site.md
 
 Read the file for the marketplace being walked before the detail-page pass. Do not load the others.
 

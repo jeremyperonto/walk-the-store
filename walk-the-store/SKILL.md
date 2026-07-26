@@ -49,7 +49,7 @@ Establish before walking:
 
 | Buyer meets the product on | Walk these paths | Playbook |
 |---|---|---|
-| A marketplace | Search path + browse path + detail page | [references/marketplace.md](references/marketplace.md) — method, plus per-marketplace rules loaded one at a time: [amazon](references/marketplaces/amazon.md) · [walmart](references/marketplaces/walmart.md) · [ebay](references/marketplaces/ebay.md) · [etsy](references/marketplaces/etsy.md) · [tiktok-shop](references/marketplaces/tiktok-shop.md) |
+| A marketplace | Search path + browse path + detail page | [references/marketplace.md](references/marketplace.md) — method, plus per-marketplace rules loaded one at a time: [amazon](references/marketplaces/amazon.md) · [walmart](references/marketplaces/walmart.md) · [ebay](references/marketplaces/ebay.md) · [etsy](references/marketplaces/etsy.md) · [tiktok-shop](references/marketplaces/tiktok-shop.md) · [shopify](references/marketplaces/shopify.md) |
 | Its own website (DTC, Shopify, SaaS) | Google entry + homepage + pricing + PDP + path to payment | [references/dtc-site.md](references/dtc-site.md) |
 | App Store / Google Play | Google entry + store search + listing + marketing site cross-check | [references/app-store.md](references/app-store.md) |
 
