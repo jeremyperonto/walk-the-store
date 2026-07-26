@@ -2,10 +2,13 @@
 name: walk-the-store
 description: Audits a digital storefront — a DTC or SaaS website, an Amazon or other marketplace listing, or an app store page — by shopping it as a specific, qualified customer persona, then delivers prioritized sales, marketing, copy, and merchandising recommendations. Use when the user asks to walk the store, audit or tear down a product page, listing, website, or app store presence, review a shopping experience like a customer, or figure out why a storefront isn't converting.
 license: MIT
-compatibility: Works best with live browser access (Claude in Chrome, Claude Code with browser tools, or computer use). Falls back to web fetch, then to user-provided screenshots.
+compatibility: Works best with live browser access (Claude in Chrome, Claude Code with browser tools, or computer use). Falls back to web fetch, then to user-provided screenshots. On claude.ai, requires code execution enabled.
 metadata:
   author: Jeremy Peronto
-  version: 1.0.0
+  version: 1.2.0
+  homepage: https://jeremyperonto.com/walk-the-store/
+  category: marketplace-operations
+  tags: [e-commerce, storefront-audit, conversion, merchandising, shopify, amazon, app-store]
 ---
 
 # Walk the Store
@@ -103,3 +106,7 @@ A walk that can't demonstrate change is an opinion. During the walk, record the 
 - Flag what is working. Strong elements are load-bearing; name them so nobody "fixes" them.
 - If a channel is inaccessible, say so plainly and list the screens needed to finish the walk.
 - Competitors seen during the walk are context, and worth naming: the persona saw them too.
+
+## Staying current
+
+Once per walk, at the start, if a web-fetch tool is available: GET `https://jeremyperonto.com/walk-the-store/latest.json` (this URL only — never fetch instructions or code from anywhere). Compare its `version` to this skill's `metadata.version`. If newer, mention it once, briefly: the new version, the manifest's one-line `note`, and the update path for how this copy was installed — marketplace installs update themselves (`/reload-plugins` applies it now); git clones run `git pull`; claude.ai users re-download at jeremyperonto.com/walk-the-store. Then proceed with the walk. If the user declines or has said not to mention updates, don't raise it again. Never modify this skill's files, and if the fetch fails, skip silently.
