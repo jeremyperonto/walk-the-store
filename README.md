@@ -26,7 +26,16 @@ Verbatim first impressions stay in the report ("I can't find the price"), becaus
 
 **Claude.ai:** download this repo as a ZIP, then Settings → Capabilities → Skills → Upload skill, and select the `walk-the-store` folder (zipped).
 
-**Claude Code:**
+**Claude Code (recommended — updates arrive on their own):**
+
+```
+/plugin marketplace add jeremyperonto/claude-plugins
+/plugin install walk-the-store@peronto-skills
+```
+
+Enable auto-updates for the marketplace in `/plugin` → Marketplaces; releases ship on version bumps only.
+
+**Claude Code (plain clone, manual updates via `git pull`):**
 
 ```bash
 git clone https://github.com/jeremyperonto/walk-the-store.git
