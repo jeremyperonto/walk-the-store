@@ -30,7 +30,7 @@ Verbatim first impressions stay in the report ("I can't find the price"), becaus
 
 ```
 /plugin marketplace add jeremyperonto/claude-plugins
-/plugin install walk-the-store@peronto-skills
+/plugin install walk-the-store@marketplace-skills
 ```
 
 Enable auto-updates for the marketplace in `/plugin` → Marketplaces; releases ship on version bumps only.
