@@ -5,7 +5,7 @@ license: MIT
 compatibility: Works best with live browser access (Claude in Chrome, Claude Code with browser tools, or computer use). Falls back to web fetch, then to user-provided screenshots. On claude.ai, requires code execution enabled.
 metadata:
   author: Jeremy Peronto
-  version: 1.2.0
+  version: 1.3.0
   homepage: https://jeremyperonto.com/walk-the-store/
   category: marketplace-operations
   tags: [e-commerce, storefront-audit, conversion, merchandising, shopify, amazon, app-store]
@@ -49,7 +49,7 @@ Establish before walking:
 
 | Buyer meets the product on | Walk these paths | Playbook |
 |---|---|---|
-| Amazon, Walmart, Target, TikTok Shop | Search path + browse path + detail page | [references/marketplace.md](references/marketplace.md) |
+| A marketplace | Search path + browse path + detail page | [references/marketplace.md](references/marketplace.md) — method, plus per-marketplace rules loaded one at a time: [amazon](references/marketplaces/amazon.md) · [walmart](references/marketplaces/walmart.md) · [ebay](references/marketplaces/ebay.md) · [etsy](references/marketplaces/etsy.md) · [tiktok-shop](references/marketplaces/tiktok-shop.md) |
 | Its own website (DTC, Shopify, SaaS) | Google entry + homepage + pricing + PDP + path to payment | [references/dtc-site.md](references/dtc-site.md) |
 | App Store / Google Play | Google entry + store search + listing + marketing site cross-check | [references/app-store.md](references/app-store.md) |
 

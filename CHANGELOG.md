@@ -2,6 +2,12 @@
 
 Feature releases get a version bump and a GitHub Release with the built zip. The site changelog at [jeremyperonto.com/walk-the-store](https://jeremyperonto.com/walk-the-store/#changelog) mirrors this file.
 
+## 1.3.0 — 2026-07-26
+
+- Per-marketplace playbooks: Amazon, Walmart, eBay, Etsy, and TikTok Shop each get a dedicated rules file — official listing requirements with sourced, dated links to marketplace documentation, ranking mechanics, expert practice, and marketplace-specific walk checks. Loaded one at a time so walks stay context-light.
+- Freshness rule: every playbook carries a Sources-verified date; hard limits older than ~90 days (or contradicted by the live page) get re-fetched from the official source before they're cited, and drift is flagged in the report.
+- Scope bar stated: marketplaces qualify when third-party vendors own their own merchandising and can win through content updates.
+
 ## 1.2.0 — 2026-07-25
 
 - Update notifier: the skill checks `latest.json` (manifest only, never instructions) at walk start when network tools are available, and tells you when a newer version exists — with the update path for how you installed.
