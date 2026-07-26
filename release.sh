@@ -47,7 +47,13 @@ PY
 
 # --- Site: zip + latest.json ---
 cp walk-the-store-skill.zip "$SITE/walk-the-store-skill.zip"
-NOTE=$(awk "/^## $V/{getline; while(\$0 ~ /^-/){print substr(\$0,3); exit}}" CHANGELOG.md)
+NOTE=$(python3 -c "
+import re
+t = open('CHANGELOG.md').read()
+m = re.search(r'^## $V.*?\n(.*?)(?=^## |\Z)', t, re.S | re.M)
+bullets = re.findall(r'^- (.+)$', m.group(1), re.M) if m else []
+print(bullets[0] if bullets else '')")
+[ -n "$NOTE" ] || { echo "FAIL: no changelog bullet found for $V"; exit 1; }
 python3 - "$V" "$SHA" "$NOTE" "$SITE" << 'PY'
 import json, sys
 v, sha, note, site = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
