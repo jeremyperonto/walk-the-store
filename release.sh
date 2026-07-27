@@ -57,13 +57,15 @@ print(bullets[0] if bullets else '')")
 python3 - "$V" "$SHA" "$NOTE" "$SITE" << 'PY'
 import json, sys
 v, sha, note, site = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
-json.dump({
+manifest = {
   "name": "walk-the-store", "version": v, "sha256": sha,
   "zip": "https://jeremyperonto.com/walk-the-store/walk-the-store-skill.zip",
   "changelog": "https://jeremyperonto.com/walk-the-store/#changelog",
   "note": note
-}, open(f"{site}/latest.json", "w"), indent=2)
-print("latest.json written")
+}
+json.dump(manifest, open(f"{site}/latest.json", "w"), indent=2)
+json.dump(manifest, open("latest.json", "w"), indent=2)
+print("latest.json written (site + repo root for raw.githubusercontent — the skill fetches the repo copy; the site copy is bot-shielded by Cloudflare)")
 PY
 
 echo ""

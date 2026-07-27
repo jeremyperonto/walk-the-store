@@ -41,6 +41,10 @@ Match the metric to where the fix sits in the funnel — a detail-page fix is re
 - **SaaS site.** Pricing-page views, demo bookings or signups per session. A published-pricing fix should move demo *quality* too — worth one line in the change log when sales feels it.
 - **Amazon.** Business Reports: sessions and unit session percentage per ASIN, weekly. Search rank tracked manually or via tool. Title, image, and A+ fixes go through Manage Your Experiments when the listing qualifies — a real split test, the strongest read available.
 - **App stores.** App Store Connect: impressions → product page views → conversion rate. Google Play Console: store listing conversion. Listing fixes belong in native listing experiments where eligible.
+- **eBay.** Seller Hub → Performance → Traffic: impressions, page views, conversion per listing, weekly.
+- **Etsy.** Shop Manager → Stats (visits, conversion) and Marketing → Search Analytics (impressions/rank per phrase).
+- **Walmart.** Seller Center Listing Quality dashboard (content & discoverability, offer, ratings) plus item-level sales.
+- **TikTok Shop.** Seller Center listing quality tier and affiliate dashboard (tagged creator videos, sold count).
 - **Where a fix is an embedded element** (a widget, a script, an on-site tool): a traffic split with a holdout is the gold standard read, if the platform supports it and volume allows.
 
 ## Reading the results honestly

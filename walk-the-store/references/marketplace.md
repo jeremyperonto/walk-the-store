@@ -41,10 +41,19 @@ Enter through the category tree as a low-intent shopper, then apply the two or t
 - The delivery promise is a conversion driver: what date does the persona see, and what do the page-1 competitors promise?
 - Stock state, quantity limits, who the seller of record is, and whether a third-party offer has taken the buy box at a different price.
 
-## Other marketplaces: deltas
+## Per-marketplace rules — load only the one being walked
 
-- **Walmart.** Ranking leans heavily on item-spec completeness and price; audit the attribute fill first. Pro Seller badge and fulfillment speed carry the trust load reviews carry on Amazon.
-- **Target.** Curated catalog, editorial feel; fewer competitors per grid but higher image and brand-consistency expectations. RedCard and pickup/delivery options frame the offer.
-- **TikTok Shop.** The feed is the search path and video is the detail page. Walk it as: does the product appear in feed for the persona's interests, is there creator content volume (which plays the role review count plays elsewhere), and does the in-video anchor match the product card price?
+The method above is universal; hard limits and ranking mechanics are not. Each supported marketplace has its own file with official listing rules (sourced and dated), ranking mechanics, expert practice, and marketplace-specific walk checks:
 
-These deltas are starting points; deeper per-marketplace playbooks are on the roadmap.
+- [marketplaces/amazon.md](marketplaces/amazon.md)
+- [marketplaces/walmart.md](marketplaces/walmart.md)
+- [marketplaces/ebay.md](marketplaces/ebay.md)
+- [marketplaces/etsy.md](marketplaces/etsy.md)
+- [marketplaces/tiktok-shop.md](marketplaces/tiktok-shop.md)
+- [marketplaces/shopify.md](marketplaces/shopify.md) — the platform's rules plus the Shop app surface; the store walk itself lives in dtc-site.md
+
+Read the file for the marketplace being walked before the detail-page pass. Do not load the others.
+
+**Freshness rule:** every file carries a "Sources verified" date. If a finding hinges on a hard limit (character count, pixel minimum, image count) and that date is more than ~90 days old — or the live page contradicts the playbook — re-fetch the official source URL when network tools are available, cite what the source says today, and note the drift in the report so the playbook gets corrected.
+
+For a marketplace with no file yet: use the universal method, state in the report that no verified playbook exists for it, and pull the marketplace's official seller documentation live if network tools allow.

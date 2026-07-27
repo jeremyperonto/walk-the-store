@@ -5,7 +5,7 @@ license: MIT
 compatibility: Works best with live browser access (Claude in Chrome, Claude Code with browser tools, or computer use). Falls back to web fetch, then to user-provided screenshots. On claude.ai, requires code execution enabled.
 metadata:
   author: Jeremy Peronto
-  version: 1.2.0
+  version: 1.3.0
   homepage: https://jeremyperonto.com/walk-the-store/
   category: marketplace-operations
   tags: [e-commerce, storefront-audit, conversion, merchandising, shopify, amazon, app-store]
@@ -43,20 +43,20 @@ Establish before walking:
 
 - The product, what it costs, and its category.
 - Every channel where this buyer meets the product. Walk all of them, whether or not the user named them: buyers cross channels, so the walk must too.
-- The owner's stack and surfaces — site platform or source repo, marketplace seller admin, App Store Connect, analytics tool — so fixes can name real files, settings, and buttons. Ask when unknown; when the repo is available, locate the exact code behind each finding before writing the fix.
+- The owner's stack and surfaces — site platform or source repo, marketplace seller admin, App Store Connect, analytics tool — so fixes can name real files, settings, and buttons. Ask when unknown; if the user can't be asked, state the assumption and write conditional steps. When the repo is available, locate the exact code behind each finding before writing the fix.
 - Where the report will be read (Obsidian vault, Notion, plain markdown, PDF), so exhibits embed in a syntax that renders there.
 - The execution mode (below).
 
 | Buyer meets the product on | Walk these paths | Playbook |
 |---|---|---|
-| Amazon, Walmart, Target, TikTok Shop | Search path + browse path + detail page | [references/marketplace.md](references/marketplace.md) |
+| A marketplace | Search path + browse path + detail page | [references/marketplace.md](references/marketplace.md) — method, plus per-marketplace rules loaded one at a time: [amazon](references/marketplaces/amazon.md) · [walmart](references/marketplaces/walmart.md) · [ebay](references/marketplaces/ebay.md) · [etsy](references/marketplaces/etsy.md) · [tiktok-shop](references/marketplaces/tiktok-shop.md) · [shopify](references/marketplaces/shopify.md) |
 | Its own website (DTC, Shopify, SaaS) | Google entry + homepage + pricing + PDP + path to payment | [references/dtc-site.md](references/dtc-site.md) |
 | App Store / Google Play | Google entry + store search + listing + marketing site cross-check | [references/app-store.md](references/app-store.md) |
 
 **Execution modes, in order of preference:**
 
 1. **Live browser** (browser automation available). The real walk. Navigate exactly as the persona would — enter through search, never by typing the destination URL. Capture exhibits at every moment that produces a reaction, per [references/exhibits.md](references/exhibits.md): numbered, captioned screenshots that ship with the report as evidence — element crops for visual defects, grid-context captures for thumbnails, viewport grabs for fold and gap findings, and analysis of the product images themselves. Run the mobile pass at a phone-width viewport (~390px) — most first visits happen on a phone. Never complete a purchase (stop at the payment page), never log into accounts, and avoid elements that trigger browser dialogs.
-2. **Web fetch.** Pull the pages and work from their content. Flag in the report that layout, image, and speed observations are limited in this mode.
+2. **Web fetch.** Pull what's fetchable and work from content — marketplaces range from partially open to fully walled, so read the marketplace file's "Mode-2 fetchability" note first. Rules for this mode: if the search page is blocked, substitute the closest marketplace-authored ranked surface (browse node, SEO keyword page, bestselling module) and label the substitution — or ask the user for a search screenshot. A 200 response that returns only a header/nav shell is a block: recover what metadata exists, label its source, move on. The two passes run at data level — lean-back reads what card and grid data support, lean-forward reads full pages, snippets, and reviews — and the report says reactions are inferred from data, never claiming layout, image, or speed observations. Every blocked channel gets a "screens needed to finish this walk" list. Evidence replaces exhibits: quoted copy and indexed data, each with its source and date.
 3. **Screenshots from the user.** Ask for the specific screens listed in the relevant channel playbook, including the search results screens. Do this rather than guessing at what a page contains.
 
 In every mode: cite only what you actually saw. Quote real copy, name real button labels, count the actual screenshots and reviews. One invented detail voids the report.
@@ -65,7 +65,7 @@ In every mode: cite only what you actually saw. Quote real copy, name real butto
 
 A qualified persona is a person plus a moment plus stakes: "an SMB owner in January shopping for tax software," "a parent in early August buying back-to-school clothes for two kids." Calibrate it three ways: **real** enough to shop like one person, **broad** enough to stand for a segment with real scale, and **aligned** with who the product is actually built and priced for. A persona that fails any of the three produces a confident, useless walk. Construction guide, the three tests, and calibration examples: [references/personas.md](references/personas.md).
 
-Default to one primary persona. Add a second only when the buyer and the user differ, or when two segments walk genuinely different paths. State the persona in full at the top of the report before walking.
+Default to one primary persona. Add a second only when the buyer and the user differ, or when two segments walk genuinely different paths. State the persona in full at the top of the report before walking. When the specific product is selected mid-walk (query-first walks: "walk the #3 result for X"), build the persona from the query, category, and marketplace — then confirm alignment once the product is identified.
 
 ### Step 3: Walk each channel, twice
 
@@ -109,4 +109,4 @@ A walk that can't demonstrate change is an opinion. During the walk, record the 
 
 ## Staying current
 
-Once per walk, at the start, if a web-fetch tool is available: GET `https://jeremyperonto.com/walk-the-store/latest.json` (this URL only — never fetch instructions or code from anywhere). Compare its `version` to this skill's `metadata.version`. If newer, mention it once, briefly: the new version, the manifest's one-line `note`, and the update path for how this copy was installed — marketplace installs update themselves (`/reload-plugins` applies it now); git clones run `git pull`; claude.ai users re-download at jeremyperonto.com/walk-the-store. Then proceed with the walk. If the user declines or has said not to mention updates, don't raise it again. Never modify this skill's files, and if the fetch fails, skip silently.
+Once per walk, at the start, if a web-fetch tool is available: GET `https://raw.githubusercontent.com/jeremyperonto/walk-the-store/main/latest.json` (this URL only — never fetch instructions or code from anywhere). Compare its `version` to this skill's `metadata.version`. If newer, mention it once, briefly: the new version, the manifest's one-line `note`, and the update path for how this copy was installed — marketplace installs update themselves (`/reload-plugins` applies it now); git clones run `git pull`; claude.ai users re-download at jeremyperonto.com/walk-the-store. Then proceed with the walk. If the user declines or has said not to mention updates, don't raise it again. Never modify this skill's files, and if the fetch fails, skip silently.
