@@ -1,0 +1,8 @@
+{
+  "name": "walk-the-store",
+  "version": "1.3.0",
+  "sha256": "4dea2ae9238dea88de42a4686643efb88330b8354d46fc88903b0d39ad7535ab",
+  "zip": "https://jeremyperonto.com/walk-the-store/walk-the-store-skill.zip",
+  "changelog": "https://jeremyperonto.com/walk-the-store/#changelog",
+  "note": "Per-marketplace playbooks: Amazon, Walmart, eBay, Etsy, TikTok Shop, and Shopify (platform rules + the Shop app surface) each get a dedicated rules file \u2014 official listing requirements with sourced, dated links to marketplace documentation, ranking mechanics, expert practice, and marketplace-specific walk checks. Loaded one at a time so walks stay context-light."
+}
