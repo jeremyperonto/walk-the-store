@@ -53,10 +53,10 @@ An incremental result is one that would have happened only because of the change
 
 - Compare equal-length windows before and after the ship date, and match them for seasonality where the category swings.
 - Exclude polluted windows: promos, press, holidays, a viral post. Note exclusions in the change log.
-- Ship one lever per surface when possible. Five fixes on one page in one week proves the walk worked; it proves nothing about which fix to repeat elsewhere.
+- Ship one lever per surface when possible. If five fixes ship on one page in one week and the metric improves, report an association with the bundle, not proof that the walk caused it or that any individual fix should be repeated elsewhere. Before/after windows cannot rule out changes in traffic mix, stock, seasonality or other confounders; a suitable controlled experiment is needed for an incremental-effect claim.
 - Low traffic means longer windows. Count weeks; on thin traffic, count months, or lean on the experiment tools instead of pre/post.
 - If the metric moved but a confound shipped in the same window, say so. A directional read labeled honestly beats a clean-looking number that cannot be defended.
 
 ## The re-walk
 
-Schedule it in the report: 60–90 days out, same persona, same channels, same passes. Re-capture the external baseline, put the after screenshots beside the before screenshots, and note which findings shipped (from the change log) and which reactions no longer occur. The re-walk is the qualitative proof that pairs with the metrics, and it works even for owners who never opened their analytics.
+Schedule it in the report: 60–90 days out, same persona, same channels, same passes. Re-capture the external baseline, put the after screenshots beside the before screenshots, and note which findings shipped (from the change log) and which reactions no longer occur. The re-walk verifies the changed shopping experience and pairs it with the metrics; it does not establish incremental sales or substitute for research with real customers. It works even for owners who never opened their analytics.
