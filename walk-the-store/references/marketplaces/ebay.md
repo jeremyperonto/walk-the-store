@@ -5,7 +5,7 @@ Sources verified: 2026-07-26. If a finding hinges on a hard limit below and this
 ## Hard rules (official)
 
 - **Title:** 80 characters maximum. No all-caps spam; avoid keyword stuffing (Best Match penalizes).
-- **Photos:** every listing requires at least one photo. Minimum 500px on the longest side; 1600×1600+ is the stated best practice for zoom. No borders. Watermarks only for ownership/attribution — never marketing or item details. Stock photos may not be the primary photo for used items.
+- **Photos:** every listing requires at least one photo. Minimum 500px on the longest side; 1600×1600+ is the stated best practice for zoom. No borders. Watermarks of any type, including ownership attribution, are prohibited by the current picture policy. Stock photos may not be the primary photo for used items.
 - **Item specifics:** required specifics must be filled at listing; recommended specifics (brand, size, type, color, style, product identifiers like MPN/GTIN) drive search matching on eBay and external search.
 
 ## Ranking and content-quality mechanics
@@ -35,5 +35,6 @@ Standard fetch tools fail on all ebay.com URLs (timeouts or bot-block "Error Pag
 
 ## Sources (official)
 
+- [Picture policy](https://www.ebay.com/help/policies/listing-policies/picture-policy?id=4370) — eBay Help; watermark prohibition rechecked 2026-10-11. Other rules retain their individual verification dates.
 - [Listing best practices](https://www.ebay.com/sellercenter/listings/create-listings/best-practices) — eBay Seller Center, public. Verified 2026-07-26.
 - [Adding pictures to your listings](https://www.ebay.com/help/selling/listings/adding-pictures-listings?id=4148) — eBay Help, public. Verified 2026-07-26.

@@ -34,7 +34,7 @@ Enter through the category tree as a low-intent shopper, then apply the two or t
 - **Reviews, read as the persona.** Count, average, and recency — are the ten most recent from this quarter or from last year? Read the top negative review in full; the persona will. Check for reviews with photos and for seller responses.
 - **Q&A.** Are the top questions answered? An unanswered question is an objection published on your own page.
 - **A+ / brand content.** Present, and doing work (comparison chart, use-case blocks), or decoration? A comparison table against the brand's own family keeps an undecided shopper inside the brand.
-- **Variations.** Sizes and colors consolidated on one listing (reviews pool, ranking concentrates) or fragmented across listings (both split)?
+- **Variations.** Can the shopper find the legitimate sizes and colors, and do the selected variant's attributes and reviews match that product? Check the platform's current variation and review-sharing rules before recommending consolidation. On Amazon, review sharing depends on eligible differences that preserve functionality; one parent does not guarantee pooled reviews or a ranking increase.
 
 ## Offer and delivery
 
