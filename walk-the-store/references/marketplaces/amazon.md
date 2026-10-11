@@ -4,11 +4,11 @@ Sources verified: 2026-07-26. If a finding hinges on a hard limit below and this
 
 ## Hard rules (official)
 
-- **Title:** under 200 characters in most categories (longer titles are suppressed/blocked under the Jan 2025 policy). Special characters `! $ ? _ { } ^ ¬ ¦` restricted; no word repeated more than twice. Category style guides (Seller Central login) override generics.
+- **Title:** at most 200 characters, including spaces, in most categories under the January 21, 2025 policy; confirm the category and store-specific limit. Special characters `! $ ? _ { } ^ ¬ ¦` are prohibited unless part of the brand name. No word repeated more than twice, except prepositions, articles, and conjunctions. Do not infer listing suppression from length alone: the announcement says listings remain active during the correction process.
 - **Main image:** pure white background (RGB 255,255,255); product fills ≥85% of the frame; no text, logos, watermarks, or accessories not in the sale. Minimum 1,000px on the longest side to enable zoom; 1,600px+ recommended.
 - **Image slots:** up to 9 per listing (roughly 7 render in the gallery plus video). Every listing requires at least one compliant image.
 - **Indexed search fields:** title, bullets, description/A+ (partial), backend search terms. A+ Content and Brand Story require Brand Registry.
-- **Variations:** parent/child listings pool reviews and concentrate ranking; wrongly split variations fragment both.
+- **Variations:** verify legitimate variation relationships and the reviews actually shown for the selected child. Amazon's February–May 2026 rollout restricts review sharing to eligible minor differences that preserve functionality; a shared parent does not guarantee shared reviews. Check the current review-sharing guidelines and category variation requirements before recommending consolidation. Do not claim a ranking increase from consolidation or merge functionally different products to collect reviews.
 
 ## Ranking and content-quality mechanics
 
@@ -38,6 +38,8 @@ SERP, Best Sellers nodes, review pages, and brand stores return 503 to fetch too
 
 ## Sources (official)
 
+- [Product title policy announcement](https://sellercentral.amazon.com/seller-forums/discussions/t/b2b15728-0d43-453e-974f-59eb63f73059/) — News_Amazon; title limit and exceptions rechecked 2026-10-11.
+- [Review sharing changes for variations](https://sellercentral.amazon.com/seller-forums/discussions/t/e182e093-6788-4d48-9526-7039ec8e0d54) — News_Amazon; functionality-based eligibility and February–May 2026 rollout rechecked 2026-10-11. Other rules retain their individual verification dates.
 - [Product image requirements](https://sellercentral.amazon.com/help/hub/reference/external/G1641) — Seller Central help, public. Verified 2026-07-26.
 - [Amazon seller education hub](https://sell.amazon.com/learn) — official, public. Verified 2026-07-26.
 - Per-category style guides: Seller Central → Help → search "style guide" (login required — note in reports when a category guide is the authority).
