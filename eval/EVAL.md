@@ -27,3 +27,17 @@ Agent read lists must include references/measurement.md (Step 6 depends on it) a
 ## 4. Reinforcement
 
 Failure patterns across the five reports become skill edits **on the release branch before merge** — the same loop that produced the work-order standard. Every eval writes `eval/<date>-<version>-eval.md`: the roll, scores, patterns found, and the diffs they produced. If the eval finds nothing to fix, say so explicitly; an eval with no findings and no statement is an eval that didn't happen.
+
+## 5. Baseline check (`claude plugin eval`)
+
+The walks above score the skill against the rubric. They don't show whether the skill beats plain Claude on the same request. The automated suite does: each case runs once with the plugin loaded and once without, and reports the difference (Δ).
+
+Cases live in the marketplace repo at `claude-plugins/plugins/walk-the-store/evals/` (release.sh replaces only `skills/`, so they survive releases): a DTC site walk, an Amazon listing walk, an App Store walk, and a negative case (a copywriting request must not start a walk). Graders mirror the rubric: persona and verbatims, work-order completeness, honesty against the transcript (weighted highest), playbook fidelity, measurement.
+
+Run from `claude-plugins/plugins/walk-the-store`:
+
+```bash
+claude plugin eval . --runs 1 --allow-tools WebFetch WebSearch --max-cost-usd 15
+```
+
+Every case is real model calls in both arms, so it draws on plan usage; `--runs 1` and the cost ceiling keep it bounded (the default is 3 runs per case). Add `--case dtc-site-walk` to run one case while tuning graders. Record WITH / W/OUT / Δ per case in the eval report. A case where Δ ≤ 0 is a finding.
