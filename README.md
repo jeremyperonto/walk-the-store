@@ -29,11 +29,10 @@ Verbatim first impressions stay in the report ("I can't find the price"), becaus
 **Claude Code (recommended — updates arrive on their own):**
 
 ```
-/plugin marketplace add jeremyperonto/claude-plugins
-/plugin install walk-the-store@marketplace-skills
+claude plugin install walk-the-store --marketplace jeremyperonto/claude-plugins
 ```
 
-Enable auto-updates for the marketplace in `/plugin` → Marketplaces; releases ship on version bumps only.
+One command from the terminal (Claude Code 2.1.292 or later): it adds the marketplace if you don't have it yet, then installs the plugin. Inside a session, `/plugin marketplace add jeremyperonto/claude-plugins` followed by `/plugin install walk-the-store@marketplace-skills` does the same. Enable auto-updates for the marketplace in `/plugin` → Marketplaces; releases ship on version bumps only.
 
 **Claude Code (plain clone, manual updates via `git pull`):**
 
